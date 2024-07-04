@@ -5,7 +5,7 @@ function detect(email) {
 
     if (atIndex > 2) {
         var detectedpart = "*".repeat(atIndex - 2);
-        email = email.substring(0, 2) + detectedpart + email.substring(atIndex)
+        email = email.substring(0, 3) + detectedpart + email.substring(atIndex);
     }
     return email;
 }
