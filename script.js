@@ -3,7 +3,7 @@ var email = prompt("Enter the e-mail");
 function detect(email) {
     var atIndex = email.indexOf("@");
 
-    if (atIndex > 4) {
+    if (atIndex > 2) {
         var detectedpart = "*".repeat(atIndex - 2);
         email = email.substring(0, 2) + detectedpart + email.substring(atIndex)
     }
