@@ -10,7 +10,7 @@ function detect(email) {
     return email;
 }
 
-if (email.length >= 3) {
+if (email.length >= 3 && email.includes("@")) {
     email.padEnd(email.length + (email.length < 3 ? 3  - email.length : 0), "*");
     alert(email);
 } else {
