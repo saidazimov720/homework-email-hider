@@ -11,7 +11,7 @@ function detect(email) {
 }
 
 if (email.length >= 3 && email.indexOf("@") > - 1) {
-    email.padEnd(email.length + (email.length < 3 ? 3  - email.length : 0), "*");
+    email = detect(email);
     alert(email);
 } else {
     alert("it is invalid e-mail");
