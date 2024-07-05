@@ -3,9 +3,8 @@ var find = prompt("Find the word");
 var rep = prompt("Word for replace");
 
 if (text && find) {
-    var startindex = 0;
-    var newtext = 0;
-    
+    var newtext = text.replace(new RegExp(find, 'g'), rep);
+    alert("Updated text:", newtext);
 } else {
     
 }
