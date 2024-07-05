@@ -1,10 +1,9 @@
 var text = prompt("Enter the text");
 var find = prompt("Find the word");
-var rep = prompt("Word for replace");
+var rep = prompt("Word to replace with");
 
 if (text && find) {
-    var newtext = text.replace(new RegExp(find, 'g'), rep);
-    console.log("Updated text:", newtext);
+    
 } else {
-    alert("Invalid value");
+    alert("Please enter both the text and the word to find.");
 }
